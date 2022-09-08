@@ -1,0 +1,108 @@
+/* -- INITIAL OBJECT SETUP */
+
+#hex-svg * {
+    fill: white;
+}
+
+#hex-logo-h {
+    transform-origin: center;
+    transform-box: fill-box;
+    fill-opacity: 0;
+    animation: fade-in 4s 1 normal ease-in-out forwards 3s;
+}
+
+#hex-logo-e {
+    transform-origin: center;
+    transform-box: fill-box;
+    fill-opacity: 0;
+    animation: fade-in 4s 1 normal ease-in-out forwards 3s;
+}
+
+#hex-logo-hexagon {
+    transform-origin: center;
+    transform-box: fill-box;
+    fill-opacity: 0;
+    stroke-opacity: 0;
+    animation: fade-in-hexagon 4s 1 normal ease-in-out forwards 3s;
+    stroke: white;
+}
+
+#hex-logo-greater {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateX(-10px);
+    animation: reset-translations 1s 1 normal ease-in-out forwards 1s;
+    stroke: white;
+}
+
+#hex-logo-lesser {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translateX(-32px);
+    animation: reset-translations 1s 1 normal ease-in-out forwards 1s;
+    stroke: white;
+}
+
+#hex-logo-slash {
+    transform-origin: center;
+    transform-box: fill-box;
+    fill-opacity: 100;
+    transform: translate(-1px, -8px) rotate(15deg);
+    animation: fade-out 0.001s 1 normal ease-out forwards 1s;
+}
+
+/* -- ANIMATION BEGIN -- */
+@keyframes fade-in {
+    0% {
+        fill-opacity: 0;
+    } 
+
+    50% {
+        fill-opacity: 50;
+    }
+    
+    100% {
+        fill-opacity: 100;
+    }
+}
+
+@keyframes fade-in-hexagon {
+    0% {
+        stroke-opacity: 0;
+        fill-opacity: 0;
+    } 
+
+    50% {
+        stroke-opacity: 50;
+        fill-opacity: 50;
+    }
+    
+    100% {
+        stroke-opacity: 100;
+        fill-opacity: 100;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        fill-opacity: 100;
+    } 
+
+    50% {
+        fill-opacity: 50;
+    }
+    
+    100% {
+        fill-opacity: 0;
+    }
+}
+
+@keyframes reset-translations {
+    0% {
+        
+    } 
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}

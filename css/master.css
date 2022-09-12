@@ -49,9 +49,20 @@ body {
     background-color: black;
 }
 
+#fader {
+    height: 150px;
+    background-color: var(--color-pallete-red);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    display: block;
+}
+
+.content-title {
+    padding: 20px 0 20px 0;
+}
+
 .content-break {
     width: 45vw;
     height: 2px;
-    background-color: red;
-    color: red;
+    border-color: red;
+    margin: auto;
 }

@@ -31,9 +31,9 @@ a:visited {
 }
 
 a:hover::before{
-    content: "\\ ";
+    content: "\\";
 } a:hover::after{
-    content: " /";
+    content: "/";
 }
 
 html {

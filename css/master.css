@@ -1,0 +1,125 @@
+:root {
+    --color-pallete-red: #a80000;
+    --color-pallete-dark-red: #731010;
+    --color-pallete-dark-grey: #1f1f1f;
+    --color-pallete-grey: #707070;
+    --color-pallete-light-grey: #d4d4d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-pallete-light-grey);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+::selection {
+    background-color: var(--color-pallete-red);
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: var(--color-pallete-light-grey);
+}
+
+html {
+    background-color: var(--color-pallete-dark-grey);
+}
+
+body {
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#content {
+    background-color: var(--color-pallete-dark-grey);
+}
+
+#footer {
+    background-color: black;
+}
+
+#fader {
+    height: 150px;
+    background-color: var(--color-pallete-red);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    display: block;
+}
+
+/* CONTENT */
+
+.content-title {
+    padding: 20px 0 20px 0;
+}
+
+.content-break {
+    width: 50vw;
+    height: 2px;
+    border-color: var(--color-pallete-red);
+    margin: auto;
+}
+
+@media (max-width: 650px)
+{
+    .content-break {
+        width: 90vw;
+    }
+}
+
+/* ABOUT ME SECTION */
+
+#aboutme {
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.aboutme-box {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    overflow: hidden;
+} 
+.aboutme-box img {
+    height: auto;
+    width: auto;
+    border-radius: 15%;
+    border: var(--color-pallete-dark-red) solid 2px;
+} .aboutme-box p {
+    text-align: left;
+} .aboutme-box h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.aboutme-box-left {
+    margin-right: 30px;
+}
+.aboutme-box-left img {
+    height: auto;
+    width: 100%;
+}
+
+.aboutme-box-right {
+    width: 100%;
+}
+
+/*Mobile*/
+@media (max-width: 650px)
+{
+    .aboutme-box {
+        display: block;
+        margin: 0 30px 0 30px;
+    }
+    .aboutme-box-left {
+        margin: 0 10px 0 10px;
+    }
+}

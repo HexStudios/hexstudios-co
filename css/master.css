@@ -35,7 +35,7 @@ body {
 
 #header {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -56,13 +56,70 @@ body {
     display: block;
 }
 
+/* CONTENT */
+
 .content-title {
     padding: 20px 0 20px 0;
 }
 
 .content-break {
-    width: 45vw;
+    width: 50vw;
     height: 2px;
-    border-color: red;
+    border-color: var(--color-pallete-red);
     margin: auto;
+}
+
+@media (max-width: 650px)
+{
+    .content-break {
+        width: 90vw;
+    }
+}
+
+/* ABOUT ME SECTION */
+
+#aboutme {
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.aboutme-box {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    overflow: hidden;
+} 
+.aboutme-box img {
+    height: auto;
+    width: auto;
+    border-radius: 15%;
+    border: var(--color-pallete-dark-red) solid 2px;
+} .aboutme-box p {
+    text-align: left;
+} .aboutme-box h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.aboutme-box-left {
+    margin-right: 30px;
+}
+.aboutme-box-left img {
+    height: auto;
+    width: 100%;
+}
+
+.aboutme-box-right {
+    width: 100%;
+}
+
+/*Mobile*/
+@media (max-width: 650px)
+{
+    .aboutme-box {
+        display: block;
+        margin: 0 30px 0 30px;
+    }
+    .aboutme-box-left {
+        margin: 0 10px 0 10px;
+    }
 }
